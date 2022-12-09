@@ -7,11 +7,6 @@ type UserContextProps = { user?: Session | null }
 export const UserContext = createContext<UserContextProps | null>(null)
 
 export const UserProvider = ({ ssrUserData, children }: any) => {
-  console.log(
-    '------------------',
-    process.env.SUPABASE_URL,
-    '------------------'
-  )
   const [supabase] = useState(() => createBrowserSupabaseClient())
 
   return (
