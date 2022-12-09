@@ -12,13 +12,15 @@ const fixReanimatedIssue = () => {
 fixReanimatedIssue()
 
 import { Provider } from 'app/provider'
+import { UserProvider } from 'app/data/provider'
+
 import Head from 'next/head'
 import React from 'react'
 import type { SolitoAppProps } from 'solito'
 
 function MyApp({ Component, pageProps }: SolitoAppProps) {
   return (
-    <>
+    <UserProvider>
       <Head>
         <title>Solito Example App</title>
         <meta
@@ -30,7 +32,7 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
       <Provider>
         <Component {...pageProps} />
       </Provider>
-    </>
+    </UserProvider>
   )
 }
 

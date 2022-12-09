@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/next-adapter": "^4.0.12",
+    "@supabase/auth-helpers-nextjs": "^0.5.2",
     "app": "*",
     "next": "13.0.1",
     "raf": "^3.4.1"

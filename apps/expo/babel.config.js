@@ -4,6 +4,13 @@ module.exports = function (api) {
     presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
     plugins: [
       'react-native-reanimated/plugin',
+      [
+        'module:react-native-dotenv',
+        {
+          moduleName: '@env',
+          path: '.env',
+        },
+      ],
       // https://expo.github.io/router/docs/intro#configure-the-babel-plugin
       require.resolve('expo-router/babel'),
     ],
