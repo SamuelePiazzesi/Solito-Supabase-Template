@@ -20,7 +20,6 @@ const nextConfig = {
   reactStrictMode: false,
   webpack5: true,
   experimental: {
-    forceSwcTransforms: true,
     swcPlugins: [[require.resolve('./plugins/swc_plugin_reanimated.wasm')]],
   },
 }
