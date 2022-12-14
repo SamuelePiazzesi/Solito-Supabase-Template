@@ -31,6 +31,9 @@ local.properties
 *.iml
 *.hprof
 
+
+
+
 # node.js
 #
 node_modules/
@@ -121,8 +124,5 @@ buck-out/
 .expo/
 web-build/
 dist/
-
-#env
-.env
 
 # @end expo-cli

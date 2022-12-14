@@ -72,5 +72,7 @@ web-build/
 .turbo
 build/**
 
-#ENV
+# Environment variables used by the application
 **/.env
+.env.local
+.env
