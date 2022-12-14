@@ -71,3 +71,6 @@ web-build/
 
 .turbo
 build/**
+
+#ENV
+**/.env
